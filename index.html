@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic HTML Page</title>
+  <style>
+    .content {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dynamic HTML Page</h1>
+  <button id="changeContentButton">Change Content</button>
+  <div id="contentContainer" class="content">
+    Initial content
+  </div>
+
+  <script>
+    // Attach event handler to the button
+    var button = document.getElementById('changeContentButton');
+    button.addEventListener('click', function() {
+      // Change the content dynamically
+      var contentContainer = document.getElementById('contentContainer');
+      contentContainer.innerHTML = 'New content';
+    });
+  </script>
+</body>
+</html>
